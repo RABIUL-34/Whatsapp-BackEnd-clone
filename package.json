@@ -1,0 +1,26 @@
+{
+  "name": "NB_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dbMessage.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "build":"cd client && npm run build",
+   "install-client":"cd client && npm install",
+   "heroku-postbuild":"npm run install-client && npm run build",
+    "start": "node server.js",
+    "client":"cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "pusher": "^5.0.0",
+    "pusher-js": "^7.0.3"
+  }
+}
